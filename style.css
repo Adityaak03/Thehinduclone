@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+* a:hover{
+    text-decoration: underline;
+}
+header{
+    box-shadow: 0 5px 6px rgba(0,0,0,0.160784);
+}
+#logo{display: flex;
+    
+    align-items: center;
+justify-content: center;    
+}
+#logo img{
+    width: 50%;
+    margin: 0 25vw;
+    padding-top: 30px;
+}
+nav{
+    margin-top: 20px;
+    padding: 0 10px;
+}
+nav ul{
+    list-style: none;
+    margin: 0 20px;
+}
+.nav-ul{
+display: flex;
+justify-content: center;
+}
+.nav-ul ul{
+    display: flex;
+}
+#menu{
+    float: right;
+    margin-right: 8vw;
+    align-items:start;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:visited{
+    color: black;
+}
+
+.nav-ul ul :nth-child(6){
+    border: 1px solid black;
+    
+}   
+.nav-ul li{
+    margin-right: 10px;
+    width: 14vw;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: black;
+    border-top: 5px solid black;
+
+}
+.headerfoot{
+    display: flex;
+    padding: 30px 0px 7px;
+    justify-content: space-between;
+    font-size: 1.3vw;
+}
+.headerfoot li{
+    list-style: none;
+    ;
+}
+.headerfoot a {
+   text-decoration: none;
+}
+.header-options{
+    align-items: center;
+}
+.foot-ul ul{
+    width: 70%;
+    display: flex;
+    vertical-align: center;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+.foot-ul{
+    width:60%;
+}
+.foot-ul a{
+    color: #b00020;
+}
+.header-options{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.header-options span{
+    width:130px;
+}
+.header-options :nth-child(2){
+    background-color: #b00020;
+    background-image: url("diya.svg");
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center;
+    border-radius: 3px;
+    height: 40px;
+    margin-right: 10px;
+
+}
+.header-options :nth-child(2) a{
+    color: white;
+}
+.header-options :nth-child(3){
+    display: flex;
+    padding: 9px 0;
+    border:1px solid #b00020;
+    justify-content: center;
+    color: #b00020;
+    border-radius: 2px;
+        
+    
+}
+.news{
+    padding: 30px 12px;
+}
+.news a{
+    text-decoration: none;
+    color: black;
+}
+.news a:hover{
+    text-decoration: underline;
+}
+#india{
+    margin: 15px 0 5px;
+    font-weight: 600;
+}
+#india a{
+    color:#b00020;
+   
+}
+#headnews h1{
+    margin: 10px 0 20px;
+    font-size: 4vw;
+    font-weight: 900;
+}
+#headnews p{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+#krishnadas{
+    margin: 15px 0 0;
+    
+    font-size: 1.1vw;
+}
+#krishnadas img{
+    width: 100%;
+}
+.container1{
+    display: flex;
+    padding: 10px 0 0;
+}
+.naidu{
+    margin-right: 20px;
+}
+.naidu img{
+    margin-top: 20px;
+   
+}
+.bjp1{height: 50%;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.bjp1{
+    border-bottom: 0.5px solid grey;
+}
+.pti{
+    margin-top:15px;
+    font-size: 0.7rem;
+    text-decoration: underline;
+}
+@media screen and (max-width:690px){
+    .container1{
+        flex-direction: column;
+        ;
+    }
+    .naidu{
+        display: flex;
+        border-bottom: 0.1px solid grey;
+
+    }
+    .naidu img{
+        width: 40%;
+    }
+    .container1 h3{
+        margin-top: 10px;
+    }
+    .pti{
+        margin-bottom: 15px;
+    }
+    
+}
+.bulletnews{
+    display: flex;
+    margin-top: 10px;}
+
+
+.premiumhead,.latesthead{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #b00020;
+    margin-bottom: 10px;
+}
+
+.premium{
+    margin-right: 20px;
+}
+.author{
+    font-size: 10px;
+    font-weight: 600;
+    margin: 15px 0;
+    text-decoration: underline;
+}
+.premiumnews h3,.premiumfoot{
+    font-weight:600;
+    margin: 5px 0 20px;
+}
+.premiumnews{
+    border-bottom: 0.1px solid grey;
+}
+.latestli{
+    border-bottom: 0.1px solid grey;
+    padding: 10px 0;
+    list-style: none;
+}
+.time{
+    font-size: 0.7rem;
+}
+.splitter{
+    display: block;
+    border-bottom: 2px solid rgba(0,0,0,0.1450980392);
+    border-top:2px solid rgba(0,0,0,0.1450980392);
+    padding: 3px 0;
+    height: 0.5vh;
+    background-color: rgba(0, 0, 0, 0.287);
+}
+.premiumfoot{
+    border-bottom: 0.1px solid grey;
+    padding-bottom: 20px;
+}
+.premiumfoot h4{
+    font-size: 14px;
+    color: #b00020;
+    padding-bottom: 15px ;
+}
+.latestfoot h4{
+    font-size: 14px;
+    color: white;
+    background-color: #0000008c;
+    width: max-content;
+    padding: 4px 7px 3px;
+    margin: 15px 0 5px;
+
+}
+.latestfoot h3{
+    margin: 20px 0;
+}
+.latestfoot{
+    border-bottom: 0.1px solid grey;
+    padding-bottom: 10px;
+    margin-top: 25px;
+}
+@media screen and (max-width:600px){
+    .bulletnews{
+        flex-direction: column;
+    }    
+}
+.thfoot{
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1450980392);
+}
+.date{
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+.langs{
+    border: 1px solid rgba(0,0,0,0.1450980392);
+    padding: 3px 0;
+    border-radius: 50px;
+    height: 35px;
+   
+}
+.langselect{
+    margin-bottom: 10px;
+}
+.langs img{
+    margin-top: 15px;
+    
+}
+.thfootnews{
+    display: flex;
+}
+.thfootnews h3{
+    margin: 25px 0 20px;
+    font-size: 1.5rem;
+}
+.thfootnews p{
+    margin: 10px 5px 15px;
+
+}
+.thfootnews :nth-child(1) {
+    border-right: 1px solid rgba(0,0,0,0.1450980392);
+}
+@media screen and (max-width:725px){
+    .thfoot{
+        flex-direction: column;
+    }    
+}
+.newscardhead{display: block;
+    font-size: 2rem;
+    font-weight: 750;
+    color: #b00020;
+    font-family: "Playfair Display",serif;
+    text-align: center;
+    padding: 0 20px;
+    margin: 2rem 0;
+    text-decoration:underline;
+}
+
+.cardholder{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards{
+    width: 23%;
+}
+.cardtitle{
+    margin:15px 0 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #b00020;
+}
+.cards h3 a{
+    margin: 10px 0 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.cards img{
+    width: 95%;
+}
+.cardholder :nth-child(1){
+    border-right: 1px solid rgba(0,0,0,0.1450980392);
+}
+.cardholder :nth-child(2){
+    border-right: 1px solid rgba(0,0,0,0.1450980392);
+}
+.cardholder :nth-child(3){
+    border-right: 1px solid rgba(0,0,0,0.1450980392);
+}
+.seemore{
+    text-align: center;
+    margin:80px ;
+    text-decoration: underline;
+}
+@media screen and (max-width:690px){
+    .cardholder{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .cards{
+        width: 50%;
+    }
+}
+.topcards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.toppickcard{
+    margin: 0 5px;
+    
+} 
+.toppickcard img{
+    width: 100%;
+    height: 430px;
+}
+.pickcardnews{
+    margin-top: -90px;
+    color: white;
+font-weight: 500;
+margin-left:10px;}
+.short{
+   margin-bottom: 10px;
+}
+.toppickhead{
+    font-size: 2.2rem;
+    font-weight: 750;
+    color: #b00020;
+    font-family: "Playfair Display",serif;
+    padding: 0 10px;
+    margin: 2rem 0;
+    text-decoration:underline;
+}
+@media screen and (max-width:640px){
+    .topcards{
+        flex-direction: column;
+    }
+    .toppichkcard img{
+        width: 80%;
+    }
+}
+.opinioncard{
+    padding: 0 12px;
+    border-right:1px solid rgba(0,0,0,0.1450980392);
+    
+}
+.opinioncardholder{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 21px;
+    font-weight: 300;
+}
+.opinioncard h3 {
+    font-weight: 300;
+}
+.op2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.double{
+    border-bottom:1px solid rgba(0,0,0,0.1450980392);
+    padding-bottom: 15px;
+}
+.opinioncard img{
+    width:90%
+}
+@media screen and (max-width:690px){
+    .opinioncardholder{
+        flex-direction: column;
+    }
+}
+.thvideohead img{
+    height: 38px;
+    top: -2px;
+    vertical-align: middle;
+}
+.thvideo{
+    background-color: black;
+    height: 380px;
+    vertical-align: middle;
+    
+}
+.thvideo a{
+    color: white;
+}
+.container2{
+    display:flex;
+justify-content: space-evenly;}
+.video{
+    width: 50%;
+    height:250px;
+    padding:10px 30px;
+}
+.video iframe{
+    width: 100%;
+    height:250px;
+}
+.videotext{
+    width: 15%;
+}
+.thvideohead{
+    display: flex;
+justify-content: center;
+padding: 30px;
+font-weight: 800;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+.thvideohead a{
+    font-size: 2rem;
+    
+}
+.videotext a p{
+ margin: 30px;
+ 
+ font-size: 16px;
+}
+.videotext a{
+    padding: 20px;
+}
+.newscardhead img{
+    height: 38px;
+    top: -2px;
+    vertical-align: middle;
+}
+.topnewsul{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    list-style-type: none;
+    margin: 30px;
+    
+}
+.topnewsul li {
+    text-decoration: none;
+    margin: 5px;
+}
+.topnewscontainer{
+    display: flex;
+}
+.dulla{
+    display: flex;}
+.topnews{
+    border-right:1px solid rgba(0,0,0,0.1450980392);
+    padding: 10px;
+    border-top:1px solid rgba(0,0,0,0.1450980392)
+}
+.yemen{
+    border-top:  1px solid rgba(0,0,0,0.1450980392);
+    border-right: none;
+    border-bottom: none;
+}
+.world{
+    color: #b00020;
+    font-weight: 500;
+    margin: 10px 0;
+}
+@media screen and (max-width:900px){
+    .topnewscontainer{
+        flex-direction: column;
+    }
+}
+.footerhead{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.footlogo img{
+    margin-left: 39px;
+}
+.appstore{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+.footer{
+    background-color: #f2f2f2;
+}
+.lists{
+    display: flex;
+    justify-content: space-between;
+}
+.options{
+    list-style: none;
+    text-decoration: none;
+    
+
+}
+.options li{
+    padding: 4px 0;
+}
+.options :first-child a{
+   font-weight: 800;
+}
+.options :first-of-type li{
+    font-weight: 800;
+}
+.options li a{
+    text-decoration: none;
+    color: black;
+}
+.last{
+    width: 25%;
+}
+.lasts li{
+    border-bottom: 1px solid black;
+}
+.footeroptions h4{
+ margin-top: 40px;
+}
+@media screen and (max-width:911px){
+    .lists{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+}.last{
+    width:50vw;
+}
+}
